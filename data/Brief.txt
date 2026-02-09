@@ -1,0 +1,4 @@
+This folder contains all datasets, training samples, and processed image/video resources used by the system.
+data->raw: Stores original, unedited images and videos. Used as the starting point for training, testing, or preprocessing.
+data->processed: Contains cleaned, resized, or augmented image/videos. These files are ready for machine learning model training or inference.
+data->datasets: Contains final dataset files structured specifically for training models. Used by YOLO, MediaPipe, and other ML pipelines.

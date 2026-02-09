@@ -1,0 +1,13 @@
+Contains all ML models, their checkpoints, and training outputs.
+models->phone_detector: Stores YOLO or custom models trained to detect mobile phones.
+models->student_detector: Stores models responsible for identifying and tracking students within the classroom.
+models->hand_model: Contains models used for hand landmark detection or hand pose tracking.
+models->head_pose: Stores models for head pose estimation(yaw, pitch, roll detection)
+models->training: Contains training scripts, optimization pipelines, and model export utilities. Used only during development, not runtime.
+
+Training will happen in models->training here we will keep Jupyter notebooks, Training scripts, Model optimization
+scripts, Experiment tracking, Training logs, Hyperparameter configurations.
+After training each model is saved into its OWN directory which will contain the final versions of models i.e.
+.py files, .onnx(Open Neural Network format) files that allow AI models to run anywhere, config YAML files,
+version metadata
+Then the .py files use the final models.

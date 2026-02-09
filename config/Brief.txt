@@ -1,0 +1,2 @@
+Contains YAML/JSON configuration files. Allows you to update system behavior without modifying the code.
+Model Paths, Threshold values, Application Settings, UI Configuration, Logging Setting

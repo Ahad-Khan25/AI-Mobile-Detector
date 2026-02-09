@@ -1,0 +1,39 @@
+# Core CV & ML Libraries
+opencv-python
+mediapipe
+numpy
+pandas
+scikit-learn
+torch
+ultralytics
+onnxruntime
+
+# Web Frameworks & APIs
+Flask
+Flask-SocketIO
+FastAPI
+uvicorn
+websocket-client
+twilio
+sendgrid
+
+# UI / App Frameworks
+gradio
+streamlit
+
+# Audio & Alerts
+playsound
+pygame
+
+# Logging / Reporting
+matplotlib
+openpyxl
+reportlab
+
+# Deployment
+gunicorn
+docker
+
+# Optional utility packages
+pydantic
+python-dotenv

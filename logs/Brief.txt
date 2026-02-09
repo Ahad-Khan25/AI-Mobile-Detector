@@ -1,0 +1,4 @@
+Stores usage data, event logs, and detection results. Keeps a historical record of the system's activity and errors.
+
+logs->reports: Saves exported reports, spreadsheets, and PDF summaries about student behavior.
+logs->system_logs: Contains debugging logs, error logs, and runtime issues.

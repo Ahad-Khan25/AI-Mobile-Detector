@@ -1,0 +1,26 @@
+This is the main source code folder all modules that make the system run/work live here.
+
+src->detection: Contains all detection components of the system. This directory handles every computer vision model used to extract information from images or video frames.
+phone_detector.py: Detects phones using YOLO.
+student_detector.py: Detects student positions.
+hand_detector.py: Detects hands and their landmarks.
+head_pose.py: Computes head pose direction.
+screen_glow.py: Detects screen light/glow.
+
+src->logic: Contains decision-making modules that interpret detection results. It will transform raw detections into meaningful status outputs.
+activity_classifier.py: Determines student activity type from detection
+phone_student_association.py: Matches the identified/detected phones with students.
+status_engine.py: Combines all signals(phone, hand, glow, head) to classify a student as "Cheating", "Suspicious", or "Safe".
+
+src->utils: Contains helper modules and shared utility functions. Provides reusable functions to support detection and logic layers.
+preprocessing.py: Resize, enhances, and normalizes frames for models.
+logger.py: Handles logging, saving reports, and tracking events.
+helpers.py: Common utility functions used across modules
+
+src->ui: Contains UI-related components and user interaction modules. Defines how the user views and interacts with the system.
+alerts.py: Handles audio warnings, notifications, or on-screen alerts.
+dashboard.py: Powers the web interface or graphical classroom dashboard.
+
+src->main.py: The central script that launches the entire system.
+loads models, Starts video capture, Calls detection modules, Passes results to logic engine, Updates UI/dashboard, Runs alerts
+
